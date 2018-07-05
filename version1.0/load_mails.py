@@ -15,16 +15,17 @@ def process_mailbox(M):
         print("No messages found!")
         return
     else:
-        for num in data[0].split():
-            typ, data = M.fetch(num, '(RFC822)')
-            print('Message %sn%sn' % (num, data[0][1]))
+        print('success')
+        # for num in data[0].split():
+        #     typ, data = M.fetch(num, '(RFC822)')
+        #     print('Message %sn%sn' % (num, data[0][1]))
 
 
 
 M = imaplib.IMAP4_SSL('imap.gmail.com')
 
 try:
-    M.login('chjn1990531@gmail.com', getpass.getpass())
+    M.login('jnchen123.123@gmail.com', 'Abcd1234!@#$') # getpass.getpass())# Abcd1234!@#$
 except imaplib.IMAP4.error:
     print("LOGIN FAILED!!! ")
     # ... exit or deal with failure...
