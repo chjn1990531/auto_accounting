@@ -15,7 +15,7 @@ def process_mailbox(M):
         print("No messages found!")
         return
     else:
-        print('success')
+        print('successfully loading')
         # for num in data[0].split():
         #     typ, data = M.fetch(num, '(RFC822)')
         #     print('Message %sn%sn' % (num, data[0][1]))
